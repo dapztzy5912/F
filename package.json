@@ -1,0 +1,17 @@
+{
+  "name": "online-fishing-game",
+  "version": "1.0.0",
+  "description": "A simple online fishing game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

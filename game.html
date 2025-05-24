@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Fishing Game</h1>
+        <div class="game-info">
+            <div class="player-info" id="player1-info">
+                <h3 id="player1-name">Player 1</h3>
+                <p>Score: <span id="player1-score">0</span></p>
+            </div>
+            <div class="player-info" id="player2-info">
+                <h3 id="player2-name">Player 2</h3>
+                <p>Score: <span id="player2-score">0</span></p>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div class="water">
+                <div class="boat" id="boat1"></div>
+                <div class="boat" id="boat2"></div>
+                <div class="fishing-line" id="line1"></div>
+                <div class="fishing-line" id="line2"></div>
+                
+                <!-- Fish will be added dynamically -->
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="move-left">Move Left</button>
+            <button id="move-right">Move Right</button>
+            <button id="fish-btn">Cast Line</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

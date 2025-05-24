@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Fishing Game - Lobby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Fishing Game</h1>
+        
+        <div class="lobby-options">
+            <div class="create-room">
+                <h2>Create Room</h2>
+                <input type="text" id="username-create" placeholder="Your Name">
+                <button id="create-room-btn">Create Room</button>
+                <div id="room-created" class="hidden">
+                    <p>Room Code: <span id="room-code"></span></p>
+                    <p>Waiting for player to join...</p>
+                </div>
+            </div>
+            
+            <div class="join-room">
+                <h2>Join Room</h2>
+                <input type="text" id="username-join" placeholder="Your Name">
+                <input type="text" id="room-id" placeholder="Room Code">
+                <button id="join-room-btn">Join Room</button>
+                <p id="join-error" class="error hidden"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
